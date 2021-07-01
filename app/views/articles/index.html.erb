@@ -2,8 +2,9 @@
 <ul>
 <% @articles.each do |item|%>
 <li>
-<%= item.title%><br>
-<%= item.body%>
+<a href="articles/<%=item.id%>">
+<%= item.title%>
+</a>
 </li>
 <%end%>
 </ul>
